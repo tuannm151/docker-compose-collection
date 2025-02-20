@@ -14,4 +14,4 @@ services:
         MYJD_DEVICE_NAME: ${MYJD_DEVICE_NAME}
         XDG_DOWNLOAD_DIR: /opt/JDownloader/Downloads
     ports:
-        - 3129:3129
+        - ${HOST_PORT:-3129}:3129
