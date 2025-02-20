@@ -3,7 +3,6 @@ services:
     image: jaymoulin/jdownloader:${JD_VERSION:-latest}
     container_name: jdownloader
     restart: unless-stopped
-    user: 1001:100
     volumes:
         - ${JD_CONFIG_PATH}:/opt/JDownloader/app/cfg
         - ${JD_DOWNLOAD_PATH}:/opt/JDownloader/Downloads
